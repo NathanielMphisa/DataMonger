@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StaffIncentiveAssessment">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:id="@+id/staffIncentiveAssessment"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:textStyle="italic"
+                android:paddingBottom="10dp"
+                android:text="Health Facility Staff Incentive Assessment"/>
+
+
+            <!-- Question starts -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/siaNumStaffMembers"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/table_defination"
+                android:stretchColumns="1"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ22018"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:hint="write your number here.."
+                        android:padding="10dip" />
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ32018"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:hint=".."/>
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ42018"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="15sp"
+                        android:hint=".."/>
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ12019"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dip"
+                        android:textSize="15sp"
+                        android:hint=".."/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/siaStaffVerified"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:background="@drawable/table_defination"
+                android:stretchColumns="1"
+                android:layout_height="wrap_content">
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ22018"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:hint="write your number here.."/>
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ32018"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:hint=".."/>
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ42018"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:hint=".."/>
+
+                </TableRow>
+
+                <TableRow
+                    android:padding="10dp">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorLightGrey"
+                        android:text="@string/siaQ12019"
+                        android:paddingRight="40dp"
+                        android:paddingLeft="40dp"/>
+
+
+                    <EditText
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textSize="15sp"
+                        android:padding="10dip"
+                        android:hint=".."/>
+
+                </TableRow>
+
+
+            </TableLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/siaConfirmReceipt"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_formal_receipt_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_formal_receipt_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_formal_receipt_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/siaStaffCommentCurrency"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:hint="..comment comes here"
+                android:inputType="textMultiLine"
+                android:lines="4"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/siaStaffCommentIncentive"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="..comment comes here"
+                android:inputType="textMultiLine"
+                android:paddingBottom="10dp"
+                android:lines="4"
+                android:textSize="15sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Sources of Income"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:textStyle="italic"
+                android:text="@string/soi"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi1"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi2"/>
+                </TableRow>
+
+                <TableRow>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi3"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi4"/>
+                </TableRow>
+
+                <TableRow>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi5"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi6"/>
+                </TableRow>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textMultiLine"
+                    android:paddingBottom="20dp"
+                    android:lines="5"
+                    android:textSize="15sp"
+                    android:hint="@string/soilComment"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingTop="20dp"
+                    android:paddingBottom="10dp"
+                    android:text="@string/soi7"/>
+
+                <TableRow>
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi8"/>
+
+                    <CheckBox
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textAlignment="textStart"
+                        android:paddingBottom="20dp"
+                        android:paddingTop="5dp"
+                        android:textSize="15sp"
+                        android:gravity="start"
+                        android:text="@string/soi9"/>
+                </TableRow>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="5"
+                    android:inputType="textMultiLine"
+                    android:hint="@string/soilCommentUserFees"
+                    android:textSize="15sp"/>
+
+            </TableLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:textSize="17sp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="Community Based Officer Assessment"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/siaConfirmReceipt"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_formal_receipt_invoice"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingBottom="10dp"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_formal_receipt_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_formal_receipt_invoice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+
+
+
+
+        </LinearLayout>
+
+
+
+    </ScrollView>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

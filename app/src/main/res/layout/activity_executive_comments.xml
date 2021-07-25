@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ExecComments">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:id="@+id/executiveComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="During our visit to (XXXXXX) Rural Health Centre we noted the following aspects regarding the general control environment in particular the implementation of the RBF and HSF programme:"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:text="Positive comments"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Write positive comments here...">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/positiveComments"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:text="Exceptions"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Write observed exceptions here...">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/exceptions"
+                android:layout_width="match_parent"
+                android:inputType="textMultiLine"
+                android:lines="5"
+                android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:text="Challenges faced during the verification exercise"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Write challenges faced here...">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/challenges"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="15dp"
+                android:paddingLeft="15dp"
+                android:text="Overall Comments and recommendations on the Health Facility (To start with positive comments, followed by exceptions, if any)"
+                android:textAlignment="textStart"
+                android:layout_gravity="start"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="15sp"
+                android:textStyle="italic"/>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorTextAppearance="@style/error_appearance"
+                style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                android:hint="Overall Comments and recommendations">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/overallComments"
+                    android:layout_width="match_parent"
+                    android:inputType="textMultiLine"
+                    android:lines="5"
+                    android:layout_height="wrap_content"/>
+
+            </com.google.android.material.textfield.TextInputLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/saveGeneralInformation"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:background="@drawable/btnlogin"
+                    android:text="Save Data" />
+
+                <Button
+                    android:id="@+id/moveToNextPage"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:textAllCaps="false"
+                    android:onClick="goToNextSectionAck"
+                    android:background="@drawable/btngonext"
+                    android:text="Done" />
+
+
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,459 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProcurementAndContracting">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <TextView
+        android:id="@+id/pageHeader"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        android:text="Procurement and Contracting HSF and RBF"/>
+
+    <TextView
+        android:id="@+id/composition"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:paddingTop="20dp"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/pageHeader"
+        android:text="Composition of procurement committee?"/>
+
+
+    <GridLayout
+
+        android:id="@+id/gridLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:columnCount="2"
+        android:rowCount="2"
+        android:textColor="@android:color/black"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/composition"
+        android:paddingTop="30dp"
+        android:orientation="horizontal">
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:text="@string/pcHealthFacility"
+            android:layout_column="0"
+            android:paddingRight="28dp"
+            android:layout_row="0"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:paddingRight="28dp"
+            android:text="@string/pcHccChair"
+            android:layout_column="1"
+            android:layout_row="0"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="28dp"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:text="@string/pcHealthFacilityCharge"
+            android:layout_column="0"
+            android:layout_row="1"/>
+
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="textStart"
+            android:paddingTop="8dp"
+            android:paddingBottom="20dp"
+            android:paddingRight="28dp"
+            android:textSize="14sp"
+            android:gravity="start"
+            android:text="@string/pcDelegatedOfficer"
+            android:layout_column="1"
+            android:layout_row="1"/>
+
+
+    </GridLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/gridLayout1">
+
+<!-- Approved supplier list -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/pcApprovedSupplierList"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_supplier"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton android:id="@+id/radio_supplier_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+
+
+            <RadioButton android:id="@+id/radio_supplier_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+
+
+        </RadioGroup>
+
+        <!-- Stock Check done -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/pcStockCheck"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_StockCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton android:id="@+id/radio_stockCheck_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+
+
+            <RadioButton android:id="@+id/radio_stockCheck_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+
+        </RadioGroup>
+
+        <!-- Asset Register -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/pcAssetRegister"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_AssetRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton android:id="@+id/radio_assetRegister_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+
+
+            <RadioButton android:id="@+id/radio_assetRegister_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+
+        </RadioGroup>
+
+        <!-- Procurement Properly planned for -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/pcProcurementProperlyPlanned"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_Procurement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton android:id="@+id/radio_procurement_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+
+
+            <RadioButton android:id="@+id/radio_procurement_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+
+        </RadioGroup>
+
+        <!-- Procurement Procedures Fair -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textSize="14dp"
+            android:text="@string/pcProcurementProcedureFair"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_ProcProcedures"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+            <RadioButton android:id="@+id/radio_ProcProcedures_yes"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+
+
+            <RadioButton android:id="@+id/radio_ProcProcedures_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+
+        </RadioGroup>
+
+        <!-- Starting -->
+
+        <TextView
+            android:id="@+id/proc_contra_test"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingTop="20dp"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/pageHeader"
+            android:text="Perform the following Procurement and Contracting Test on all Quarters"/>
+
+
+        <TextView
+            android:id="@+id/proc_contra_test_Q1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/pageHeader"
+            android:text="Q U A R T E R  1"/>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="enter document number">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proc_contra_test_Q1_doc_num"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="description of transaction">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proc_contra_test_Q1_trans_descr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="transaction amount">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proc_contra_test_Q1_amount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="transaction approved by procurement committee/Finance committee ?">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proc_contra_test_Q1_trans_approval"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="procurement competitive ? Three Quotations and Comparative schedule in place?">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proc_contra_test_Q1_trans_compete"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:errorTextAppearance="@style/error_appearance"
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:hint="Were services / goods reception acknowledged">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/proc_contra_test_Q1_goods_ack"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+        <TextView
+            android:id="@+id/proc_contra_test_Q2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/pageHeader"
+            android:text="Q U A R T E R  2"/>
+
+        <TextView
+            android:id="@+id/proc_contra_test_Q3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/pageHeader"
+            android:text="Q U A R T E R  3"/>
+
+
+
+        <TextView
+            android:id="@+id/proc_contra_test_Q4"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:textSize="18dp"
+            android:paddingTop="20dp"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+            app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+            app:layout_constraintTop_toBottomOf="@id/pageHeader"
+            android:text="Q U A R T E R  4"/>
+
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

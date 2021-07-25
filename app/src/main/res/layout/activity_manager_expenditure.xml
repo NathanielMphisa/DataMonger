@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManagerExpenditure">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/RBFExpInternalControls"
+                android:paddingBottom="30dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBasedonInterview"
+                android:paddingBottom="30dp"
+                android:textStyle="italic"
+                android:textAlignment="textStart"
+                android:gravity="start"/>
+
+            <Button
+                android:id="@+id/btnExpReviewA1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="RBF Expenditure and Internal Controls Review"
+                android:tag="getExp"
+                android:textAllCaps="false"
+                android:onClick="getFragment"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/button_styling"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/questionCashBook"
+                android:paddingBottom="30dp"
+                android:textStyle="italic"
+                android:textAlignment="center"/>
+
+            <Button
+                android:id="@+id/btnQ32018"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Q3 2018"
+                android:tag="q318"
+                android:onClick="getFragment"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/btnQ42018"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q4 2018"
+                android:tag="q418"
+                android:onClick="getFragment"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/btnQ12019"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q1 2019"
+                android:tag="q119"
+                android:onClick="getFragment"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/btnQ22019"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="Q2 2019"
+                android:tag="q219"
+                android:onClick="getFragment"
+                android:background="@drawable/button_styling"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBCashBookUpdatedTimely"
+                android:paddingTop="40dp"
+                android:paddingBottom="15dp"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_cashbook_timelyUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="30dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_cashbook_timelyUpdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_cashbook_timelyUpdates"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="10dp"
+                android:text="HSF/RBF Activities Implementation Progress Review"/>
+
+            <Button
+                android:id="@+id/activityA"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="HSF Activity 1"
+                android:textAllCaps="false"
+                android:tag="activity1"
+                android:onClick="getActivityImplementation"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/activityB"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="HSF Activity 2"
+                android:textAllCaps="false"
+                android:tag="activity2"
+                android:onClick="getActivityImplementation"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/activityC"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:text="HSF Activity 3"
+                android:textAllCaps="false"
+                android:tag="activity3"
+                android:layout_marginBottom="40dp"
+                android:onClick="getActivityImplementation"
+                android:background="@drawable/button_styling"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use of Performance Subsidies"
+                android:paddingBottom="15dp"/>
+
+
+            <Button
+                android:id="@+id/useOfPerformanceSubsidies"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Use of Performance Subsidies (RBF/HSF)"
+                android:tag="getPerfomanceSubs"
+                android:textAllCaps="false"
+                android:onClick="getFragment"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/cash_and_bank_management"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Cash and Bank Management RBF/HSF "
+                android:tag="getCashAndBankManagement"
+                android:textAllCaps="false"
+                android:onClick="getFragment"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_styling"/>
+
+            <Button
+                android:id="@+id/procurement_and_contracting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Procurement and contracting"
+                android:tag="getProcurementContracting"
+                android:textAllCaps="false"
+                android:onClick="getFragment"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/button_styling"/>
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

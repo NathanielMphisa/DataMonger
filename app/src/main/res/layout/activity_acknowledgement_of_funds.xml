@@ -1,0 +1,362 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AcknowledgementOfFunds">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:id="@+id/executiveComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Question starts -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Can the Health Facility easily receive funds?"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_easily_receive_funds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <!-- Questions ends -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Are there any known challenges in the receipt of funds process?"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_challenges_receive_funds"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_challenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_challenge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/receipt_funds_challenges"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:lines="3"
+                android:inputType="textMultiLine"
+                android:hint="If Yes to the above, please explain."
+                android:paddingBottom="20dp"/>
+
+            <!-- Questions ends -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Has the Health facility opened a Nostro account"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_opened_nostro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_opened_nostro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_opened_nostro"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <EditText
+                android:id="@+id/date_opened_nostro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:lines="2"
+                android:inputType="textMultiLine"
+                android:hint="If Yes to the above, when was it opened?."
+                android:paddingBottom="20dp"/>
+
+            <!-- Questions ends -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Is the Nostro account being used?"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_nostro_used"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_nostro_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_nostro_used"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <!-- Questions ends -->
+
+            <!-- Question starts -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="HSF/RBF disbursements acknowledged and recorded in the bank register ?"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_ack_bank_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_ack_bank_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_ack_bank_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <!-- Questions ends -->
+
+            <!-- Question starts -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Are the funds supported by payment vouchers that are fully authorized and recorded in the cash/bank register?"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_support_payment_voucher"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+
+                <RadioButton android:id="@+id/radio_yes_support_payment_voucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_support_payment_voucher"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <!-- Questions ends -->
+
+            <!-- Question starts -->
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="Is all the cash withdrawn from the bank recorded in the cash and bank register?"/>
+
+            <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/radio_recorded_cash_bank_register"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <RadioButton android:id="@+id/radio_yes_recorded_cash_bank_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionYes"/>
+                <!-- android:onClick="onRadioButtonClicked"/>-->
+
+                <RadioButton android:id="@+id/radio_no_recorded_cash_bank_register"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/optionNo"/>
+                <!--  android:onClick="onRadioButtonClicked" -->
+
+            </RadioGroup>
+
+            <!-- Questions ends -->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textStyle="italic"
+                android:paddingTop="15sp"
+                android:paddingBottom="10sp"
+                android:textSize="16sp"
+                android:text="Select Risks associated with weaknesses noted above: "/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:text="Delays might be experienced in utilising RBF funds before the next disbursement.\nRecommendation: Advise the district accountant on challenges being experienced in receiving funds"/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:text="It will be difficult to trace in the event of wrong amount of disbursement sent to the bank account if funds are not acknowledged. \nRecommendation: All RBF funds should be acknowledged in the bank register."/>
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:paddingTop="20dp"
+                android:paddingBottom="20dp"
+                android:textSize="15sp"
+                android:gravity="start"
+                android:text="Incorrect balances in the bank register that do not correspond with the bank statements. \nRecommendation: All RBF funds should be acknowledged in the bank register."/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

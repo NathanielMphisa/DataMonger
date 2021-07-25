@@ -1,0 +1,280 @@
+<resources>
+    <string name="app_name">DataMonger</string>
+    <string name="logintxtUserhint">someone@mail.com</string>
+    <string name="logintxtPassword">password</string>
+    <string name="loginbtnSignIn">Sign in</string>
+    <string name="loginforgotPass">Recover forgotten password</string>
+
+
+    <!-- Main Master -->
+    <string name="verificationTool">Verification Tool</string>
+    <string name="belongs">For Health Centres receiving RBF and HSF funds</string>
+    <string name="objectives">Verification Objectives</string>
+    <string name="section1">General Information &amp; Executive Summary</string>
+    <string name="section2">Summary of Findings</string>
+    <string name="section3">Expenditure &amp; Activity Review, Procurement Process</string>
+    <string name="section4">Vfm &amp; Analytical review</string>
+
+
+    <string-array name="verificationObjectives">
+        <item>1.	To assess the soundness of the internal controls;</item>
+        <item>2.	To check the accuracy of the financial records;</item>
+        <item>3.	To check if the facilities are applying UNICEF funds for the intended activities as guided by the RBF Plan and HSF Guidelines and the Recommended eligibility criteria;</item>
+        <item>4.	To check if the facilities are keeping proper books of accounts;</item>
+        <item>5.	To assess if the facilities have a proper filing system in place for UNICEF’s documents; </item>
+        <item>6.	To identify areas where the facility needs assistance; and,</item>
+        <item>7.	To check VfM.</item>
+    </string-array>
+
+    <!-- General Infor and Executive Summary -->
+    <string name="sectionGeneralInfor">General Information</string>
+    <string name="sectionExecutive">Executive Summary</string>
+
+    <!-- Summary of Findings manager -->
+    <string name="acknowledge">Acknowledgement and Recording of Funds</string>
+    <string name="cashControl">Cash Internal Control</string>
+    <string name="purchaseInternal1">Purchases Internal Control, Payment Procedure,Security Items Control</string>
+    <string name="staffIncentive">Staff Incentive Assessment, Sources of income</string>
+
+
+    <!-- register screen -->
+
+    <string name="regFillIn">Fill in your details to \n get on board!</string>
+    <string name="exampleFirstName">First name comes here</string>
+    <string name="exampleLastName">then your last name here,</string>
+    <string name="exampleEmail">input your email</string>
+    <string name="examplePhoneNumber">phone number</string>
+    <string name="exampleOrganisation">put the organisation code </string>
+    <string name="examplePassword">desired password</string>
+    <string name="exampleConfirmPass">confirm the password</string>
+    <string name="next">Submit</string>
+
+    <!-- General Information -->
+    <string name="appRHC">Name of Health Centre</string>
+    <string name="appProvince">Province</string>
+    <string name="facilityHead">Name of facility Head</string>
+    <string name="facilityHeadNumber">Facility Head Contact Number</string>
+    <string name="verificationDate">Date of Verification</string>
+
+    <!-- Expense -->
+
+    <string name="item">item</string>
+    <string name="description">description (optional)</string>
+    <string name="alignItem">Align cost to eligible criterion </string>
+    <string name="usd">USD</string>
+    <string name="rtgs">RTGS</string>
+
+
+    <!-- For Radio Buttons -->
+
+    <string name="optionYes">Yes</string>
+    <string name="optionNo">No</string>
+
+    <!-- Cash internal Control -->
+    <string name="cicInvoice">Is the invoice containing name and contact details of the supplier, the date, description of the goods or services provided, amount paid, and a signature of the person receiving the money?</string>
+    <string name="cicShortReceipt">For goods received from an informal vendor, is there a short receipt completed by the Health facility showing the details of the vendor (name, address, identity number, contact number), goods/services supplied, cost and date?</string>
+    <string name="cicCashCounts"> Are cash counts being conducted once per week by HCC Treasurer in the presence of the HCC chairperson and the Health Facility In Charge?</string>
+    <string name="cicSignatories">Does every payment voucher have 3 signatories, Health facility In Charge (compiles payment request), HCC Treasure (certifies the payment request), and HCC Chairperson (authorizes payment)?</string>
+    <string name="cicFacilityAccountSpecification">Is the health facility account being used specifically for funds whose intention is to support the Result Based Financing (RBF) programme?</string>
+
+    <!-- Purchases internal Control -->
+    <string name="picClearSpecificationForms">Do all requisitions for goods/services required have clear specifications form (Appendix 6 form) and supported by internal requisition form (Appendix 5)?</string>
+    <string name="picPurchaseOrder">Is the purchase order form being issued when purchasing goods /services from suppliers ? </string>
+    <string name="picGoodsReceivedRegister">Are all goods purchased and received being recorded in the Goods received register ? </string>
+    <string name="picThreeQuotations">Are there three quotations required for the procurement of goods</string>
+    <string name="picPrequalifiedSupplies">Is the procurement of medicines being done through prequalified suppliers who meet the regulatory requirements?</string>
+    <string name="picApprovalDHE">Is all procurement for goods, works and services being done/approved by the DHE?</string>
+    <string name="picQuotationJustification">In the case of one quotation being used on procurement, is direct or sole source purchase being justified?</string>
+    <string name="picExceptionsJustified">Are exceptions to procurement procedures approved by management and documented?</string>
+    <string name="picPeriodicStorkChecks">Periodic verification of assets/supplies being done? (Periodic stock checks)</string>
+
+    <!-- Payment procedure -->
+    <string name="ppInternalRequisitionTally">Is the internal requisition tallying with the quantities and description shown on the invoice or delivery note?</string>
+    <string name="ppPaymentVoucherHCC">Is the payment voucher being authorized by the HCC Chairperson?</string>
+    <string name="ppNumericalFiling">Are the originals of the payment vouchers being filed according to their numerical order?</string>
+
+    <!-- Progress review -->
+    <string name="prQuarterlyProgress">Quarterly progress made on utilisation of RBF funds is assessed through meetings?</string>
+
+    <!-- Security items Control -->
+    <string name="sicPaymentVoucher">Payment Voucher</string>
+    <string name="sicCashRegister">Cash Register</string>
+    <string name="sicBankRegister">Bank Register</string>
+    <string name="sicCashCountForm">Cash Count Form</string>
+    <string name="sicInternalReq">Internal Requisition Form</string>
+    <string name="sicSpecificationForm">Specification form</string>
+    <string name="sicGoodsReceivedRegister">Goods Received Register</string>
+    <string name="sicPurchaseOrder">Purchase Order</string>
+    <string name="sicShortReceipt">Short Receipt</string>
+    <string name="sicHFMC">Health Facility Monthly Checklist</string>
+    <string name="sicBackupPlan">Backup Plan</string>
+    <string name="sicComparativeSchedule">Comparative Schedule Procurement</string>
+    <string name="sicExtraSpecifications">Invoices, receipts, and delivery notes</string>
+    <string name="sicJustificationDoc">Justification document if not using lowest priced quotation</string>
+    <string name="sicLessThanThreeJustification">Justification for obtaining less than three quotations exists</string>
+    <string name="sicSentToDHE">Is the cash/bank register (Appendix 2 and 3), Health Facility Monthly Checklist (duplicate: Appendix 10) and supporting documents being sent to the DHE on a monthly basis</string>
+
+    <!-- Staff incentive assessment -->
+    <string name="siaNumStaffMembers">a) How many staff members did the facility have during the period under review?</string>
+    <string name="siaQ22018">Q2 2018</string>
+    <string name="siaQ32018">Q3 2018</string>
+    <string name="siaQ42018">Q4 2018</string>
+    <string name="siaQ12019">Q1 2019</string>
+    <string name="siaStaffVerified">b) How many staff members were physically verified for each period?</string>
+    <string name="siaConfirmReceipt">c)	Did the staff member/s confirm receipt of funds?</string>
+    <string name="siaStaffCommentCurrency">d) Staff to comment on the currency the incentive was received in.</string>
+    <string name="siaStaffCommentIncentive">e) Staff comment on the incentive programme (how the funds were distributed to them/agreed use of funds if funds are not being distributed to individuals).</string>
+
+    <!-- Sources of income -->
+    <string name="soi">Confirm the facilities sources of income.  These may include any of the following</string>
+    <string name="soi1">User Fees</string>
+    <string name="soi2">NGO/s</string>
+    <string name="soi3">Treasury (Government)</string>
+    <string name="soi4">Development Partners</string>
+    <string name="soi5">Faith based organisations</string>
+    <string name="soi6">Business Community</string>
+    <string name="soilComment">Comments on Sources of Income</string>
+    <string name="soi7">Confirm if pregnant women and children under 5 are paying user fees?</string>
+    <string name="soi8">Children under 5 yrs</string>
+    <string name="soi9">Pregnant mothers</string>
+    <string name="soilCommentUserFees">Comments on user fees</string>
+
+    <!-- VERIFICATION WORKING PAPER -->
+
+    <string name="RBFExpInternalControls">A1.	RBF Expenditure and Internal Controls Review</string>
+    <string name="eicBasedonInterview">Based on the interview: </string>
+    <string name="eicUseFundsComply">1) Does the use of funds comply with MoHCC financial and procurement policies and procedures for disbursement and expenditure and utilization of HSF funds?</string>
+    <string name="eicNatureofExpenditure">2) Nature of expenditure: (Q1 2019)</string>
+    <string name="eicRecommendedElibilityCritria">Funds spent on eligible expenditure as per the Recommended eligibility criteria?\n
+        •	65% to be spent on facilities, (Can include priorities on drugs and or priorities as per the Operational Plan or emergencies)\n
+        •	Up to 25% to be spent on Staff Incentives\n
+        •	Up to 10% to be spent on other items (Travel and Subsistence, Refreshments for HCC meetings)
+    </string>
+    <string name="eicItem"> Item</string>
+    <string name="eicPercentofRBF"> % of RBF</string>
+    <string name="eicStaffIncentive"> Staff incentive</string>
+    <string name="eicComments"> Comments on funds utilisation</string>
+    <string name="eicMedicine"> Medicine</string>
+    <string name="eicTandS"> T and S </string>
+    <string name="eicOthers"> Others</string>
+
+    <string name="eicFinancialMonitoring">3) Financial monitoring and reporting requirements being met accurately and on time? (expenditure reports and bank reconciliations being submitted to the district monthly?</string>
+    <string name="eicFinancialSystem">Are the UNICEF Funds Managed in the Financial System? (Note: Only Hospitals may have automated systems). If UNICEF Funds are being managed outside the current automated financial system note the alternate system in place</string>
+    <string name="eicFundsAccountedFor">4) All HSF/RBF funds accounted for? If “NO”, state Reason/s why funds have not been accounted for</string>
+    <string name="eicTreatmentUnpaid">5) Treatment of unpaid balances (if any) including transfers to Health workers returned unpaid. NB: Give reasons for funds being returned</string>
+    <string name="eicUnutilisedFunds">6) HSF/RBF Funds in account (unutilised funds) as at 30 June 2019 (Balance before June 2019 disbursement)</string>
+    <string name="eicBankcharges">7) Total Bank Charges (including transaction charges) incurred per Quarter:</string>
+
+    <string name="eicQ32018">Q3 2018</string>
+    <string name="eicQ42018">Q4 2018</string>
+    <string name="eicQ12019">Q1 2019</string>
+    <string name="eicQ22019">Q2 2019</string>
+
+    <string name="eicUQ22018">Q2 2018(Jun/Jly 2018 bal) </string>
+    <string name="eicUQ32018">Q3 2018(Sept bal)</string>
+    <string name="eicUQ42018">Q4 2018(Dec bal)</string>
+    <string name="eicUQ12019">Q1 2019(Mar 2019 bal) </string>
+
+    <string name="eicFacilityAccesstoRBF">8) How did the facility access HSF/RBF funds?</string>
+    <string name="eicFundsFullyUtilised">9) Were funds for each quarter utilised after the full utilisation of the prior quarter’s disbursement? (please indicate balance available just before receipt of disbursement)</string>
+    <string name="eicFundsFullYUtilisedIfNo">If no to any of the Quarters, note the challenges (if any)</string>
+
+    <!-- eicB -->
+
+    <string name="eicBCashbookPeriod">Period</string>
+    <string name="eicBDescriptionOfTransaction">Description of transaction</string>
+    <string name="eicBItemsAuthorisedFinance">Items Authorised by Finance Committee </string>
+    <string name="eicBInvoicesOriginals">Invoices are originals</string>
+    <string name="eicBPaymentsUsingInvoices">Payments made using invoices and not statements</string>
+    <string name="eicBInvoicesNotOneMonth">Invoices are not one month old or more</string>
+    <string name="eicBArithmeticallyAccurate">Arithmetically accurate</string>
+    <string name="eicBCorrectlyPostedInCashBook">Correctly coded and posted in the Cash Book</string>
+    <string name="eicBReceiptsSupportedDoc">Receipts and expenditures supported by appropriate documentation as required?</string>
+    <string name="eicBReasonable">Reasonableness of expenditure, 3 Quotations and Comparative schedule available ? </string>
+    <string name="eicBStampPaid">Stamped Paid?</string>
+    <string name="eicBVouchersFiledCorrectly">Vouchers filed correctly?</string>
+    <string name="eicBPaymentsBeforeDelivery">NB: No payments are to be made before delivery of goods and services (comment if necessary)</string>
+    <string name="eicBCashBookUpdatedTimely">Is the cashbook updated timely (does the health facility maintain an adequate, up‑to‑date cashbook, recording receipts and payments?)</string>
+    <string name="questionCashBook">From the cash book perform the following tests on RBF Transactions: \n Select period and perform test on chosen transaction </string>
+
+
+    <!-- Activities Implementation Progress Review -->
+
+    <string name="iprHSFActivity">HSF Activity</string>
+    <string name="iprImplementationStatus">Implementation Status</string>
+    <string name="iprModeOfPayment">Mode of payment Cash/RTGS/Ecocash</string>
+    <string name="iprObservation">Observation</string>
+    <string name="iprFollowUpAction">Follow Up action plan and recommendation</string>
+
+
+    <!-- use of Performance Subsidies -->
+
+    <string name="ups">Use of Performance Subsidies</string>
+    <string name="upsBasedOnInterview">Based on the interview</string>
+    <string name="upsUseFundsComply">1) Does the use of funds comply with the contract on expenditure and utilization of RBF/HSF funds?  Or in accordance with the Work Plan?</string>
+    <string name="upsCalPerformanceSub">2) Calculation of performance subsidy done correctly?</string>
+    <string name="upsCalStuffIncentive">3) Calculation of Staff Incentive done correctly?</string>
+    <string name="upsDisbursement">4) Disbursement of Staff Incentives (specify currency), /n Comment on how incentive recipients are accessing the funds/money.</string>
+    <string name="upsCommentIncentiveAccess">Comment on how incentive recipients are accessing the funds/money.</string>
+    <string name="upsWorkPlanImplemented">5) Work Plan activities implemented as planned?</string>
+    <string name="upsActivityDeviation">6) Activity deviation from facility’s Operational Plans and or RBF Contract (by agreement with MoHCC and UNICEF)?</string>
+    <string name="upsRBFReceivedTimeously">7) RBF funds received in a timely manner?</string>
+    <string name="upsDepositNotification">8) Who receives notification of funds deposited in RBF account?</string>
+    <string name="upsAchievementOfExpectedResult">9) Achievement of expected results as highlighted in the Operational Plan?</string>
+    <string name="upsCauseOfSignificantDelay">10) Causes for significant delays in achievement of expected results?</string>
+    <string name="upsOutstandingIssues">11) Any issues being faced with RBF programme that requires clarity? (Unresolved/Outstanding issues?)</string>
+    <string name="upsReasonablenessExpenditure">12) Reasonableness of expenditure and to the benefit of end user justifiable?</string>
+
+
+    <!-- Cash and Bank Management -->
+    <string name="cbMBanking">Cash and Bank Management RBF/HSF</string>
+    <string name="cbBankRegs">Bank Reconciliation schedule</string>
+    <string name="cbMBankingDetails">Banking Details</string>
+    <string name="cbMBankName">Name of Bank used by Facility</string>
+    <string name="cbMRTGSBankAccount">Facility\'s local Bank Account Number:</string>
+    <string name="cbMUSDBankAccount">Facility\'s NOSTRO Account Number:</string>
+    <string name="cbMFundsDedicatedAccount">Are RBF funds deposited into dedicated HSF Bank \? </string>
+    <string name="cbMCashManagement">Direct Cash Management</string>
+    <string name="cbMDirectCashManagement">The keeping of petty cash for HSF is not permitted.  Should the cash be found on site note how this cash is being kept and any risks.</string>
+    <string name="cbMModeOfPayment">Mode of payment made for supplies and medicines?</string>
+    <string name="cbMCashUsedModePayment">Is cash used as mode of payment for goods above $100? \n(Recommendation: Payments should be made through Real Time Gross Settlement (RTGS)/Cheques unless payments are less than One Hundred Dollars ($US$100) then a cash withdrawal can be made)</string>
+    <string name="cbMCashBookUpdated">Is cashbook updated timely as receipt and expenditure was incurred? </string>
+    <string name="cbMCashBookBalances">Were cash book balances for the month correct?</string>
+
+
+    <!-- Procurement and Contracting HSF and RBF -->
+
+    <string name="pcProcurementComposition">Composition of procurement committee?</string>
+    <string name="pcHealthFacility">Health Facility</string>
+    <string name="pcHccChair">HCC Chairperson</string>
+    <string name="pcHccTreasurer">HCC Treasurer</string>
+    <string name="pcHealthFacilityCharge">Health facility in charge.</string>
+    <string name="pcDelegatedOfficer">Delegated officer</string>
+    <string name="pcApprovedSupplierList">Does the facility have an approved supplier’s list?</string>
+    <string name="pcStockCheck">Stock Check done at least once per month by facility head?</string>
+    <string name="pcAssetRegister">Asset Registers are kept at the station/health facility.</string>
+    <string name="pcProcurementProperlyPlanned">Was procurement properly planned for?</string>
+    <string name="pcProcurementProcedureFair">Are the procurement procedures fair and transparent, encourage competitive tendering, promote best Value for Money?</string>
+
+    <string name="pcD1DocumentNo">Document Number</string>
+    <string name="pcD1DescriptionOfTrans">Description of transaction</string>
+    <string name="pcD1Amount">Amount</string>
+    <string name="pcD1ApprovedFinance">Approved by procurement committee/Finance committee</string>
+    <string name="pcD1CompliancePolicies">In compliance to procurement policies (Correctly authorised) Procurement of supplies and services was competitive i.e. Three quotations were sought, comparative schedules are in place?</string>
+    <string name="pcD1ReceiptingProcess">Goods/Services Receipting Process (note the process followed in acknowledging receipt of goods, including any variations from purchase order, quality, quantity etc)</string>
+    <string name="pcProtectFinancialData">Do mechanisms exist to protect financial data?  (i.e. passwords, locked up or files kept in a secure place etc.</string>
+    <string name="pcProtectFinancialDataAnswer">Please specify your answer to the above "</string>
+
+
+    <!-- Analytical Review and General Comments -->
+    <string name="arFromDiscussion">From discussion with senior health facility officials, review the operating environment and make note of any areas that require UNICEF and MoHCC management attention or restrict effectiveness of the health facility:</string>
+
+    <!-- Value for money -->
+    <string name="vfmQ1">Value for Money (VfM) – Provide an evidence based assessment below on VfM guided by the following (discuss with health facility senior officials) </string>
+    <string name="vfmQ2">Economy: assess the degree to which inputs are being purchased in the right quantity and at the right price.</string>
+    <string name="vfmQ3">Efficiency: assess how efficiently the project is delivering its outputs, considering the rate at which intervention inputs are converted to outputs and its cost-efficiency</string>
+    <string name="vfmQ4">Effectiveness: assess the quality of the intervention’s work by assessing the rate at which outputs are converted into outcomes and impacts, and the cost-effectiveness of this conversion.</string>
+    <string name="vfmq5">Equity: degree to which the results of the intervention are equitably distributed.</string>
+
+
+</resources>

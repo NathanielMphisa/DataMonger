@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Master">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        app:layout_constraintBottom_toBottomOf="parent">
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/MenuHeader"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Find Survey questions below"
+                android:textAlignment="center"
+                android:textSize="25sp"
+                android:paddingTop="15dp"/>
+
+            <TextView
+                android:id="@+id/forGeneralInformation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:onClick="getGeneralInformation"
+                android:padding="30dp"
+                android:text="Question 1: General Information"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forAmountsReceived"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getAmountsReceived"
+                android:text="Question 2: Amounts received"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forExecComments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getExecComments"
+                android:text="Question 3: Executive Comments"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forFundsAcknowledgement"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getFundsAcknowledgement"
+                android:text="Question 4: Funds receipt Acknowledgement"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forCashInternalControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getCashInternalControl"
+                android:text="Question 5: Cash internal Control"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forPurchasesInternalControl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getPurchasesInternalControl"
+                android:text="Question 6: Purchase internal Control"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forStaffIncentiveAssessment"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getStaffIncentiveAssessment"
+                android:text="Question 7: Staff incentive assessment"
+                android:textSize="17sp"/>
+
+            <TextView
+                android:id="@+id/forExpenditureInternalControls"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:onClick="getExpenditureInternalControls"
+                android:text="Question 9: RBF Expenditure and Internal Controls Review"
+                android:textSize="17sp"/>
+
+
+            <TextView
+                android:id="@+id/forCashBankManagementRBF"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:padding="30dp"
+                android:text="Question 10: Test Ccash and bank management"
+                android:textSize="17sp"/>
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

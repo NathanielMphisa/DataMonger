@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:id="@+id/executiveComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textStyle="italic"
+            android:text="@string/RBFExpInternalControls"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/eicBasedonInterview"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/eicUseFundsComply"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:paddingBottom="5dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:textStyle="italic"
+            android:text="@string/eicNatureofExpenditure"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="10dp"
+            android:text="@string/eicRecommendedElibilityCritria"
+            android:textStyle="italic" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"
+            android:padding="10dp"
+            android:text="Confirm the statistics"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGrey"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="@string/eicItem" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:background="@color/colorLightGrey"
+                    android:text="@string/eicPercentofRBF" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorWhite"
+                    android:text="@string/eicMedicine" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:background="@color/colorWhite"
+                    android:hint=" % comes here"/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGrey"
+                    android:gravity="center_vertical"
+                    android:text="@string/eicStaffIncentive" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:background="@color/colorLightGrey"
+                    android:hint="     -   " />
+
+            </TableRow>
+
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/eicTandS" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:background="@color/colorWhite"
+                    android:hint="     -   "/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGrey"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/eicOthers" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorLightGrey"
+                    android:textSize="15sp"
+                    android:hint="     -   " />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:lines="3"
+            android:hint="@string/eicComments"
+            android:textAlignment="center"/>
+
+        <!-- New Question RBF Funds Accounted for -->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/eicFundsAccountedFor"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:paddingBottom="5dp"/>
+
+        <!-- of Question -->
+
+        <!-- New Question Treatment of unpaid-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/eicTreatmentUnpaid"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:lines="3"
+            android:inputType="textMultiLine"
+            android:paddingBottom="5dp"/>
+
+        <!-- of Question -->
+
+
+        <!-- New Question Unutilised funds-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/eicUnutilisedFunds"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:lines="3"
+            android:inputType="number"
+            android:paddingBottom="5dp"/>
+
+        <!-- of Question -->
+
+
+        <!-- New Question Total bank charges-->
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/eicBankcharges"/>
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGrey"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:text="Quarter" />
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textStyle="bold"
+                    android:background="@color/colorLightGrey"
+                    android:text="Total bank charges" />
+
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorWhite"
+                    android:text="@string/eicQ32018" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:textSize="15sp"
+                    android:inputType="number"
+                    android:background="@color/colorWhite"
+                    android:hint=" amounts come here.."/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="30dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGrey"
+                    android:gravity="center_vertical"
+                    android:text="@string/eicQ42018"/>
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:background="@color/colorLightGrey"
+                    android:hint="     -   " />
+
+            </TableRow>
+
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/eicQ12019" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:inputType="number"
+                    android:textSize="15sp"
+                    android:background="@color/colorWhite"
+                    android:hint="     -   "/>
+
+
+            </TableRow>
+
+            <TableRow
+                android:paddingTop="5dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:background="@color/colorLightGrey"
+                    android:layout_height="30dp"
+                    android:gravity="center_vertical"
+                    android:text="@string/eicQ22019" />
+
+                <EditText
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="30dp"
+                    android:inputType="number"
+                    android:gravity="center_vertical"
+                    android:background="@color/colorLightGrey"
+                    android:textSize="15sp"
+                    android:hint="     -   " />
+
+            </TableRow>
+
+        </TableLayout>
+
+        <!-- of Question -->
+
+        <!-- New Question Access HSF/RBF funds-->
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/eicFacilityAccesstoRBF"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:inputType="text"
+                android:paddingBottom="5dp"/>
+
+        <!-- of Question -->
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/eicFundsFullyUtilised"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:paddingBottom="10dp"
+                android:text="@string/eicFundsFullYUtilisedIfNo"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="20dp"
+                android:inputType="text"
+                android:paddingBottom="5dp"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorLightGrey"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:text="Quarter" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textStyle="bold"
+                        android:background="@color/colorLightGrey"
+                        android:text=" Balance" />
+
+                </TableRow>
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:background="@color/colorWhite"
+                        android:text="@string/eicUQ22018" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:textSize="15sp"
+                        android:inputType="number"
+                        android:background="@color/colorWhite"
+                        android:hint=" amounts come here.."/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorLightGrey"
+                        android:gravity="center_vertical"
+                        android:text="@string/eicUQ32018"/>
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:background="@color/colorLightGrey"
+                        android:hint="     -   " />
+
+                </TableRow>
+
+
+                <TableRow
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/eicUQ42018" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:inputType="number"
+                        android:textSize="15sp"
+                        android:background="@color/colorWhite"
+                        android:hint="     -   "/>
+
+
+                </TableRow>
+
+                <TableRow
+                    android:paddingTop="5dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:background="@color/colorLightGrey"
+                        android:layout_height="30dp"
+                        android:gravity="center_vertical"
+                        android:text="@string/eicUQ12019" />
+
+                    <EditText
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:layout_height="30dp"
+                        android:inputType="number"
+                        android:gravity="center_vertical"
+                        android:background="@color/colorLightGrey"
+                        android:textSize="15sp"
+                        android:hint="     -   " />
+
+                </TableRow>
+
+            </TableLayout>
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

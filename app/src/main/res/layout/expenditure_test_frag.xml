@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        android:gravity="end"
+        android:text="Quarter"
+        android:id="@+id/txtView"
+        android:paddingRight="30dp"/>
+
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/descriptionTrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBDescriptionOfTransaction"/>
+
+            <EditText
+                android:id="@+id/edtdescriptionTrans"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/itemsAuthorisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBItemsAuthorisedFinance" />
+
+            <EditText
+                android:id="@+id/edtItemsAuthorisation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/invoicesBeingOriginals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBInvoicesOriginals" />
+
+            <EditText
+                android:id="@+id/edtInvoicesBeingOriginals"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/paymentInvoices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBPaymentsUsingInvoices" />
+
+            <EditText
+                android:id="@+id/edtPaymentInvoices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/invoicesMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBInvoicesNotOneMonth" />
+
+            <EditText
+                android:id="@+id/edtInvoicesMonth"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/arithmeticsCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBArithmeticallyAccurate" />
+
+            <EditText
+                android:id="@+id/edtArithmeticsCorrect"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/postedCorrectly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBCorrectlyPostedInCashBook" />
+
+            <EditText
+                android:id="@+id/edtPostedCorrectly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/supportDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBReceiptsSupportedDoc" />
+
+            <EditText
+                android:id="@+id/edtSupportDoc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/transReasonable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBReasonable" />
+
+            <EditText
+                android:id="@+id/edtTransReasonable"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/docsStampPaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBStampPaid" />
+
+            <EditText
+                android:id="@+id/edtDocsStampPaid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+            <TextView
+                android:id="@+id/docsFiledCorrectly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/eicBVouchersFiledCorrectly" />
+
+            <EditText
+                android:id="@+id/edtDocsFiledCorrectly"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

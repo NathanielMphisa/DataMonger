@@ -1,0 +1,1065 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PurchasesInternalControl">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:id="@+id/purchasesInternalControl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Question starts -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="@string/picClearSpecificationForms"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio_adequate_segregation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RadioButton android:id="@+id/radio_yes_adequate_segregation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/optionYes"/>
+        <!-- android:onClick="onRadioButtonClicked"/>-->
+
+        <RadioButton android:id="@+id/radio_no_adequate_segregation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/optionNo"/>
+        <!--  android:onClick="onRadioButtonClicked" -->
+
+    </RadioGroup>
+
+        <!-- questions Ends -->
+
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picPurchaseOrder"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_purchase_order"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_purchase_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_purchase_order"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picGoodsReceivedRegister"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_goods_received_register"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_goods_received_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_goods_received_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picThreeQuotations"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_three_quotations"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_three_quotations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_three_quotations"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picPrequalifiedSupplies"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_prequalified_supplies"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_prequalified_supplies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_prequalified_supplies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picApprovalDHE"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_approval_dhe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_approval_dhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_approval_dhe"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picQuotationJustification"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_quotation_justification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_quotation_justification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_quotation_justification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picExceptionsJustified"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_exceptions_justified"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_exceptions_justified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_exceptions_justified"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+
+
+        <!-- Question starts -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/picPeriodicStorkChecks"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_periodic_stockchecks"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_periodic_stockchecks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_periodic_stockchecks"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question Ends -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="Payment Procedure"/>
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/ppInternalRequisitionTally"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_internal_requisition_tally"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_internal_requisition_tally"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_internal_requisition_tally"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+        <!-- Questions ends -->
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/ppPaymentVoucherHCC"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_payment_voucherHCC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_payment_voucherHCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_payment_voucherHCC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question ends -->
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/ppNumericalFiling"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_numerical_filing"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_numerical_filing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_numerical_filing"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question ends -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/prQuarterlyProgress"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_quarterly_progress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_quarterly_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_quarterly_progress"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:textSize="17sp"
+            android:gravity="center"
+            android:paddingBottom="10dp"
+            android:text="Security items Control"/>
+
+
+        <!-- Question ends -->
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicPaymentVoucher"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_PaymentVoucher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_PaymentVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_PaymentVoucher"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicCashRegister"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_CashRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_CashRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_CashRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicBankRegister"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_BankRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_BankRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_BankRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicBackupPlan"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_BackupPlan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_BackupPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_BackupPlan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicCashCountForm"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_CashCountForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_CashCountForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_CashCountForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicInternalReq"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_InternalReq"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_InternalReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_InternalReq"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicSpecificationForm"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_SpecificationForm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_SpecificationForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_SpecificationForm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicGoodsReceivedRegister"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_GoodsReceivedRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_GoodsReceivedRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_GoodsReceivedRegister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicPurchaseOrder"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_PurchaseOrder"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_PurchaseOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_PurchaseOrder"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicShortReceipt"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_ShortReceipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_ShortReceipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_ShortReceipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicHFMC"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_HFMC"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_HFMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_HFMC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicComparativeSchedule"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_ComparativeSchedule"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_ComparativeSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_ComparativeSchedule"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicExtraSpecifications"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_ExtraSpecifications"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_ExtraSpecifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_ExtraSpecifications"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicJustificationDoc"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_JustificationDoc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_JustificationDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_JustificationDoc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicLessThanThreeJustification"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_LessThanThreeJustification"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_LessThanThreeJustification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_LessThanThreeJustification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/sicSentToDHE"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_SentToDHE"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_SentToDHE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_SentToDHE"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

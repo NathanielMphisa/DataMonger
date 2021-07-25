@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ey.datamonger">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".BankRecsMgr"></activity>
+        <activity android:name=".AddExpense" />
+        <activity android:name=".ExpenseMgr" />
+        <activity android:name=".ProcurementAndContracting" />
+        <activity android:name=".CashBankManagement" />
+        <activity android:name=".ListViewItems" />
+        <activity android:name=".TestActivity" />
+        <activity android:name=".SummaryOfFindings_Mgr" />
+        <activity android:name=".GeneralInforExec_Mgr" />
+        <activity android:name=".MainMaster" />
+        <activity android:name="com.ey.firstsection.MainMaster" />
+        <activity android:name=".UseOfPerformanceSub" />
+        <activity android:name=".ExpendActivityManager" />
+        <activity android:name=".ExpenditureTest" />
+        <activity android:name=".ManagerExpenditure" />
+        <activity android:name=".ExpenditureInternalControls" />
+        <activity android:name=".StaffIncentiveAssessment" />
+        <activity android:name=".PaymentProcedure" />
+        <activity android:name=".PurchasesInternalControl" />
+        <activity android:name=".CashInternalControl" />
+        <activity android:name=".Master" />
+        <activity android:name=".AcknowledgementOfFunds" />
+        <activity android:name=".ExecComments" />
+        <activity android:name=".AmountsPaid" />
+        <activity android:name=".General_Information" />
+        <activity android:name=".GetRegistered" />
+        <activity android:name=".Login" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

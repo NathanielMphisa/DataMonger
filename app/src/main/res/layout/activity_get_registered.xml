@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerbg_background"
+    tools:context=".GetRegistered">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <TextView
+        android:id="@+id/applicationName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:text="@string/app_name"
+        android:textColor="@color/colorPurple"
+        android:textSize="50sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop" />
+
+    <TextView
+        android:id="@+id/txtDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/regFillIn"
+        android:textSize="25sp"
+        android:paddingTop="50dp"
+        android:gravity="center"
+        app:layout_constraintTop_toBottomOf="@id/applicationName"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"/>
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintTop_toBottomOf="@id/txtDetails"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!-- user name editText -->
+
+            <EditText
+                android:id="@+id/txtFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="@string/exampleFirstName"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <!-- last name ediText starts here -->
+
+            <!-- email ediText starts here -->
+            <EditText
+                android:id="@+id/txtLastName"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="text"
+                android:text="@string/exampleLastName"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <!-- phone number  ediText starts here -->
+            <EditText
+                android:id="@+id/txtUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="textEmailAddress"
+                android:text="@string/exampleEmail"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <EditText
+                android:id="@+id/txtUserContacts"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="phone"
+                android:text="@string/examplePhoneNumber"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <!-- Organisational ediText starts here -->
+
+            <EditText
+                android:id="@+id/txtUserOrganisation"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="number"
+                android:text="@string/exampleOrganisation"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <!-- password ediText starts here -->
+
+            <!-- Confirm password ediText starts here -->
+
+            <EditText
+                android:id="@+id/txtUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:text="@string/examplePassword"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+
+            <!-- submit btn here -->
+            <EditText
+                android:id="@+id/txtUserPasswordConfirm"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/get_register"
+                android:gravity="center"
+                android:inputType="textPassword"
+                android:text="@string/examplePassword"
+                android:textColor="@color/colorWhite"
+                android:textSize="15sp" />
+
+            <Button
+                android:layout_width="172dp"
+                android:layout_height="50dp"
+                android:layout_gravity="right"
+                android:text="@string/next"
+                android:textAllCaps="false"
+                android:textColor="@color/colorWhite" />
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

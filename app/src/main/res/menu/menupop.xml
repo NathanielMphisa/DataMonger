@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/quarterOne"
+        android:title="Q1 2018"/>
+    <item
+        android:id="@+id/quarterTwo"
+        android:title="Q2 2018"/>
+    <item
+        android:id="@+id/quarterThree"
+        android:title="Q3 2018"/>
+    <item
+        android:id="@+id/quarterFour"
+        android:title="Q4 2018"/>
+    <item
+        android:id="@+id/allQuarters"
+        android:title="allExpenses"/>
+
+</menu>

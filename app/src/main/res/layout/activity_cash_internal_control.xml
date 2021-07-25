@@ -1,0 +1,465 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CashInternalControl">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp"/>
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp"/>
+
+    <ScrollView
+        android:id="@+id/executiveComments"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <!-- Question starts -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="Are duties adequately segregated between payment authorization, paying out and recording of transactions?"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio_adequate_segregation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RadioButton android:id="@+id/radio_yes_adequate_segregation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/optionYes"/>
+        <!-- android:onClick="onRadioButtonClicked"/>-->
+
+        <RadioButton android:id="@+id/radio_no_adequate_segregation"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/optionNo"/>
+        <!--  android:onClick="onRadioButtonClicked" -->
+
+    </RadioGroup>
+
+    <!-- Questions ends -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="10dp"
+        android:text="If not to above, how many people are authorizing the transaction?"/>
+
+    <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/radio_authorise_transaction"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2">
+
+
+        <RadioButton android:id="@+id/radio_one"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="One"/>
+        <!-- android:onClick="onRadioButtonClicked"/>-->
+
+        <RadioButton android:id="@+id/radio_two"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Two"/>
+        <!--  android:onClick="onRadioButtonClicked" -->
+
+    </RadioGroup>
+
+
+        <!-- Questions ends -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="If not to above, how many people are authorizing the transaction?"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_responsible_cashResources"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_one_incharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Facility - in - charge"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_two_other"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Other"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/date_opened_nostro"
+                android:paddingTop="10dp"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:lines="1"
+                android:inputType="textMultiLine"
+                android:hint="If answer is other, specify here."
+                android:paddingBottom="20dp"/>
+
+        </RadioGroup>
+
+        <!-- Questions ends -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="How much cash is kept at the facility? (a) less than 200 (b) more than 200 (specify amount)"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_cash_kept_facility"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_a_cash_kept_facility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="One"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_b_cash_kept_facility"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Two"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/amountKeptFacility"
+                android:paddingTop="10dp"
+                android:textSize="15sp"
+                android:paddingLeft="15dp"
+                android:textAlignment="textStart"
+                android:gravity="start"
+                android:lines="1"
+                android:inputType="textMultiLine"
+                android:hint="If answer is (b), specify amount found at facility."
+                android:paddingBottom="20dp"/>
+
+        </RadioGroup>
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="Are payments being made for goods or services actually received by health facility?"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_goods_received"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_goods_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_goods_received"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question ends -->
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="Formal receipt or invoice issued by seller of goods/services purchased?"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_formal_receipt_invoice"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_formal_receipt_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_formal_receipt_invoice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question ends -->
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cicInvoice"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_invoice_contants"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_invoice_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_invoice_contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+        <!-- Question ends -->
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cicShortReceipt"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_short_receipt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_short_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_short_receipt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question ends -->
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cicCashCounts"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_cash_counts"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_cash_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_cash_counts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question ends -->
+
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cicSignatories"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_signatories"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_Signatories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no_Signatories"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+        <!-- Question starts -->
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="20dp"
+            android:paddingBottom="10dp"
+            android:text="@string/cicFacilityAccountSpecification"/>
+
+        <RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/radio_"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2">
+
+
+            <RadioButton android:id="@+id/radio_yes_facility_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionYes"/>
+            <!-- android:onClick="onRadioButtonClicked"/>-->
+
+            <RadioButton android:id="@+id/radio_no__facility_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/optionNo"/>
+            <!--  android:onClick="onRadioButtonClicked" -->
+
+        </RadioGroup>
+
+
+
+
+
+
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

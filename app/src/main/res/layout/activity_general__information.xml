@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".General_Information">
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="25dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_percent="0.94160587" />
+
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="25dp" />
+
+    <!--
+    <TextView
+        android:id="@+id/sectionName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="General Information"
+        android:textSize="30sp"
+        android:textColor="@color/colorPrimaryDark"
+        android:layout_above="@id/generalInformationQuestions"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintEnd_toStartOf="@id/guidelineRight"
+        app:layout_constraintTop_toBottomOf="@id/guidelineTop"/> -->
+
+
+    <ScrollView
+        android:id="@+id/generalInformationQuestions"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="@id/guidelineBottom"
+        app:layout_constraintEnd_toStartOf="@+id/guidelineRight"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@id/guidelineLeft"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!-- RHC name -->
+
+                <!-- start -->
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="@string/appRHC">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/appRHC"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+                <!-- end -->
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Select the province from dropdown and \n write the district"
+                    android:textAlignment="center"
+                    android:textColor="@color/colorBlack" />
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                        android:hint="RHC District">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                            android:id="@+id/appDistrict"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Select province">
+
+                    <AutoCompleteTextView
+                        android:id="@+id/filled_exposed_dropdown"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Spinner
+                        android:id="@+id/appProvince"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+
+            <!-- TODO Marking End of the combination-->
+
+
+            <!-- facility type -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Facility type">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/appFacilityType"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+            <!-- facility head -->
+
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Facility type">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/appFacilityHead"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- facility head title -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Facility Head Title">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/appFacilityHeadTitle"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Facility head contact number -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Facility Head Contacts">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/appFacilityHeadContact"
+                        android:layout_width="match_parent"
+                        android:inputType="number"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Persons met -->
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:errorTextAppearance="@style/error_appearance"
+                    style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+                    android:hint="Facility members met">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/appPersonsMet"
+                        android:layout_width="match_parent"
+                        android:inputType="textMultiLine"
+                        android:layout_height="wrap_content"/>
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+
+            <!-- Date of verification -->
+
+            <EditText
+                android:id="@+id/appDateofVerification"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/inputbox"
+                android:hint="Date of verification"
+                android:inputType="text"
+                android:textSize="15sp" />
+
+            <!-- Members of the verification team -->
+
+            <EditText
+                android:id="@+id/appVerificationTeam"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/inputbox"
+                android:hint="Members of the verification team"
+                android:inputType="textMultiLine"
+                android:textSize="15sp" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:text="Subsection requires input from the bank statements on facility"
+                android:textAlignment="center"
+                android:textColor="@color/colorBlack"
+                android:textSize="15sp"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:text="Amounts Received RBF (break down the funds by currency (USD or Bond Notes/RTGS), by quarter and indicated dates received)"
+                android:textAlignment="center"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <!-- Defining Subsection for Money received for Q1-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Quarter Disbursement related to Q1, received in Q2"
+                    android:textColor="@color/colorBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Spinner
+                        android:id="@+id/spinnerCurrencyq1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/q1AmountReceived"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/inputbox"
+                        android:gravity="center"
+                        android:hint="Funds for Q1, received in Q2"
+                        android:inputType="number"
+                        android:paddingLeft="8dp"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/q1DateReceivedFunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/inputbox"
+                    android:gravity="center"
+                    android:hint="tap and set date received disbursement for Q1"
+                    android:onClick="getDate"
+                    android:tag="quarter1"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!-- Q1 section ends -->
+
+            <!-- breather -->
+
+            <!-- Defining Subsection for Money received for Q2-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Quarter Disbursement related to Q2, received in Q3"
+                    android:textColor="@color/colorBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Spinner
+                        android:id="@+id/spinnerCurrencyq2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/q2AmountReceived"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/inputbox"
+                        android:gravity="center"
+                        android:hint="Funds for Q1, received in Q2"
+                        android:inputType="number"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/q2DateReceivedFunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/inputbox"
+                    android:gravity="center"
+                    android:onClick="getDate"
+                    android:tag="quarter2"
+                    android:hint="tap and set date received disbursement for Q2"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+
+            <!-- Q2 section ends -->
+
+            <!-- breather -->
+
+
+            <!-- Defining Subsection for Money received for Q3-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Quarter Disbursement related to Q3 2018, received in Q4 2018"
+                    android:textColor="@color/colorBlack" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Spinner
+                        android:id="@+id/spinnerCurrencyq3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/q3AmountReceived"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/inputbox"
+                        android:hint="Funds for Q3 2018, received in Q4 2018"
+                        android:inputType="number"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/q3DateReceivedFunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/inputbox"
+                    android:gravity="center"
+                    android:tag="quarter3"
+                    android:onClick="getDate"
+                    android:hint="tap and set date received disbursement for Q3"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!-- Q3 section ends -->
+
+            <!-- breather -->
+
+            <!-- Defining Subsection for Money received for Q4-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Quarter Disbursement related to Q4 2018, received in Q1 2019" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="3">
+
+                    <Spinner
+                        android:id="@+id/spinnerCurrencyq4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1" />
+
+                    <EditText
+                        android:id="@+id/q4AmountReceived"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:layout_weight="2"
+                        android:background="@drawable/inputbox"
+                        android:hint="Funds for Q4 2018, received in Q1 2019"
+                        android:inputType="number"
+                        android:textSize="15sp" />
+                </LinearLayout>
+
+                <EditText
+                    android:id="@+id/q4DateReceivedFunds"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/inputbox"
+                    android:gravity="center"
+                    android:tag="quarter4"
+                    android:onClick="getDate"
+                    android:hint="tap and set date received disbursement for Q4"
+                    android:textSize="15sp" />
+
+            </LinearLayout>
+
+            <!-- Q4 section ends -->
+
+            <!-- breather -->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="20dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <Button
+                    android:id="@+id/saveGeneralInformation"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btnlogin"
+                    android:onClick="saveInformation"
+                    android:text="Save Data" />
+
+                <Button
+                    android:id="@+id/moveToNextPage"
+                    android:layout_width="100dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/btngonext"
+                    android:onClick="goToNextSection"
+                    android:text="Next Section" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
